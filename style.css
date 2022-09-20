@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FCF8E8 ;
+}
+/*header*/
+.barraSuperior {
+    background-color: #94B49F;
+    color: #FCF8E8;
+    
+    font-family:'Lobster Two';
+   margin-left: -15%;
+    
+}
+.headerContainer{
+    background-color: #CEE5D0;
+    color: #D8B384;
+    padding: 1%;
+    justify-content: space-between;
+    display: flex;
+   
+}
+
+
+/*barra de navegacion*/
+nav{
+       
+
+   margin-left:2% ;
+    
+
+}   
+.menu{
+    list-style: none;
+    color: #D8B384;
+      
+}
+/*reseteo de anchors*/
+.menu a{
+    text-decoration: none;
+    color: #D8B384;  
+    font-family: 'Arima semi bold', cursive;  
+    display: block;
+
+}
+.menu a:hover{
+    background-color: #94B49F;
+    color:#FCF8E8;
+}
+/*submenu desplegable*/
+nav li ul{
+    display:none;
+    position:relative;
+    top:0px;
+    left:120px;
+}
+        
+nav li:hover ul{display:block;}
+li > ul >li{
+    float:;
+    }
+
+/*exclusivo de inicio*/
+/*logo*/
+.cajaImagenIlustrativa{
+width: 150px;
+ height: 150px;
+ display:inline-flex ;
+ overflow: hidden;
+border-radius: 40%;
+
+  }
+  
+#imagenIlustrativa{
+ max-width:100%;
+ max-height: 100%;
+object-fit: cover;
+}
+/*ofertas pagina principal*/
+#ofertas{
+    background-color:#FCF8E8 ;
+}
+.oferta{
+width: 20%;
+height: auto;
+}
+h1{
+    text-align: center;
+}
+
+/*exclusivo de productos*/
+
+.producto{
+    
+    margin: 2px;
+    background-color: #D8B384;
+    width: 350px;
+    height:230px;
+    display: inline-flex;
+
+padding: 1px;
+
+text-align:end;
+color: #CEE5D0;
+}
+.imgProducto{
+ 
+   max-width: 80%;
+   max-height: 85%;
+}
+/*sobre nosotros*/
+h2{
+    text-align: center;
+    font-family: "Arima";
+    color:#94B49F
+}
+p{
+    margin-left:5% ;
+    font-family: "Arima Bold", 
+    text-align: center;
+    color:#94B49F ;
+}
+/*footer*/
+#footer{
+    background-color: #D8B384;
+
+}
+#wats{
+    width: 60px;
+    height: auto;
+    position:fixed;
+    right:2%;
+    bottom:2%
+
+}
+.cajasFooter{
+    display:inline-flex
+}
+.iconosFooter{
+    width: 30px;
+    height: 30px;
+    
+}
