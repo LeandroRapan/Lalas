@@ -9,7 +9,7 @@ body{
 .barraSuperior {
     background-color: #94B49F;
     color: #FCF8E8;
-    
+    text-align: right;
     font-family:'Lobster Two';
    margin-left: -15%;
     
@@ -59,7 +59,7 @@ nav li ul{
         
 nav li:hover ul{display:block;}
 li > ul >li{
-    float:;
+   background-color: aqua;
     }
 
 /*exclusivo de inicio*/
@@ -118,8 +118,8 @@ h2{
 }
 p{
     margin-left:5% ;
-    font-family: "Arima Bold", 
-    text-align: center;
+    font-family: "Arima Bold"; 
+    text-align:center;
     color:#94B49F ;
 }
 /*footer*/
