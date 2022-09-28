@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Img\logo.jpeg" type="image/x-icon">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="Img\logo.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,16 +17,18 @@
 <title>Lalas</title>
 </head>
 <body>
-    <header  >
+    
+    <header class="header" >
         <!--barra superior-->
         <div class="barraSuperior">
-        <h1>Suculentas Lala, La Plata<h1>
+        <p>Suculentas Lala, La Plata</p>
         </div>
-        <div class="headerContainer"><!--nav-bar-->
-     <nav class="nav" >
+        <div class="headerContainer ">
+            <!--nav-bar-->
+     <nav class="nav container-fluid" >
       <ul class="menu" >
          <li><a href="index.html">Inicio</a></li>
-         <li>Nuestros productos<ul class="menu">
+         <li>Nuestros productos<ul class="menu ">
             <li><a href="productosSuculentas.html">Suculentas</a>
                 </li>
             <li><a href="productosMacetas.html"> Macetas</a></li>
@@ -31,14 +37,18 @@
            <li><a href="contacto.html"> Contacto</a></li>
            <li><a href="sobreNosotros.html"> Sobre nosotros</a></li>
      </ul>
-      
+         
     </nav>
+
+
 
     <!--imagen ilustrativa-->
    <div class="cajaImagenIlustrativa">
    <img #="imagenIlustrativa" src="Img\ImagenIlustrativaSuculentas.webp" alt="">
    </div>  </div>  
 </header>
+
+<!-- main -->
 <main>
 <!--productos-->
 <section>

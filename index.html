@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Img\logo.jpeg" type="image/x-icon">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="Img\logo.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,17 +18,17 @@
 </head>
 <body>
     
-    <header  >
+    <header class="header" >
         <!--barra superior-->
         <div class="barraSuperior">
-        <h1>Suculentas Lala, La Plata<h1>
+        <p>Suculentas Lala, La Plata</p>
         </div>
-        <div class="headerContainer">
+        <div class="headerContainer ">
             <!--nav-bar-->
-     <nav class="nav" >
+     <nav class="nav container-fluid" >
       <ul class="menu" >
          <li><a href="index.html">Inicio</a></li>
-         <li>Nuestros productos<ul class="menu">
+         <li>Nuestros productos<ul class="menu ">
             <li><a href="productosSuculentas.html">Suculentas</a>
                 </li>
             <li><a href="productosMacetas.html"> Macetas</a></li>
@@ -42,16 +46,39 @@
    </div>  
 </header>
 <!-- main -->
-<main>
+<h1> Ofertas</h1>
+<main class="mainIndex">
+  
+<aside class="asideMain">
+  <img class="imgAside" src="Img\1.jpg" alt="">
+</aside>
 
-   <h2> Ofertas</h2>
-<section id="ofertas" >
-     
-    <article><img class="oferta" src="Img\1.jpg" alt=""></article>
-    <article><img class="oferta"src="Img\6.jpg" alt=""></article>
-    <article><img class="oferta"src="Img\4.jpg" alt=""></article>
-    <article><img class="oferta"src="Img\15.jpg" alt=""></article>
-</section>  
+<section class="ofertas">
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Img\16.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Img\6.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Img\4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Img\15.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
 </main>
 
 
