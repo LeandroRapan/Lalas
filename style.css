@@ -29,9 +29,6 @@ body{
    align-items: center;
    justify-content: center;
   
-   
-  
-   
 }
 .headerContainer{
     background-color: #CEE5D0;
@@ -42,8 +39,8 @@ body{
    padding-top: 0%;
     justify-content: space-between;
     display: flex;
-   
- 
+    align-items: center;
+
 }
 
 
@@ -77,22 +74,21 @@ body{
 }
 /*submenu desplegable*/
 nav li ul{
-    display:none;
-    position:absolute;
-  border-radius: 1em;
+display:none;
+position:absolute;
+border-radius: 1em;
+background-color: #CEE5D0;
+padding-right: 20%;
+padding-top: 0%;
+padding-left: 1%;
+z-index: 1;
 
-    background-color: #CEE5D0;
-    padding-right: 20%;
-    padding-top: 0%;
-    padding-left: 1%;
-    z-index: 1;
-    
 }
         
 nav li:hover ul{
-    
-    display:block;
-    }
+display:block;
+}
+
 
 
 
@@ -108,31 +104,31 @@ z-index: 3;
 box-shadow: 0px 1px 14px 6px rgba(0,0,0,0.31);
 -webkit-box-shadow: 0px 1px 14px 6px rgba(0,0,0,0.31);
 -moz-box-shadow: 0px 1px 14px 6px rgba(0,0,0,0.31);
-
-  }
-  
+}
 #imagenIlustrativa{
- max-width:100%;
- max-height: 100%;
+max-width:100%;
+max-height: 100%;
 object-fit: cover;
-;
+
 
 }
 
+/* Main */
 .mainIndex{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+/* Aside */
 .asideMain{
     width: 40vw;
   object-fit: cover;
 }
 .imgAside{
     width: 100%;
-  
+    margin-top: 3.4em;
 }
-
+/* Ofertas del inicio con carrusel */
 .ofertas{
     display: flex;
     flex-wrap: wrap;
@@ -158,30 +154,28 @@ h1{
    
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap:1%;
+    grid-auto-rows: auto;
+    gap:2px ;
+    row-gap: 2px;
+    padding:1em;
 }
 
 .producto{
-    
-   
     background-color: #D8B384;
-    width: 350px;
-    height:230px;
+    width: 15.5em;
+    height:auto;
     display: inline-flex;
     flex-direction: column;
-   
-     
-    color: #CEE5D0;
-    font-size: 1em;
-
-
+    color: white;
+    font-size: 1.2em;
+    text-justify: auto;
 
 }
+/* img con descripcion img2 sin */
 .imgProducto{
-   
    width: 100%;
    height: 85%; 
-
+   object-fit: cover;
    
 }
 .imgProducto2{
@@ -198,29 +192,22 @@ h2{
 /*footer*/
 .footer{
     background-image: linear-gradient(to bottom,#FCF8E8,#D8B384); 
-    display:flex;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns:o.5fr 2fr 1fr ;
+    grid-template-areas: 
+    "gGrid interGrid listaGrid"
+    "gGrid interGrid listaGrid"
+    ;
     padding: 2em;
-   width: 100vw;
-   margin-top: 5%;
-}
-#wats{
-    width: 2em;
-    height: auto;
-    position:fixed;
-    right:2%;
-    bottom:2%
-
-}
-.cajasFooter{
-   display: flex;
    
+   margin-top: 5%;
+   font-family: "Arima";
+   font-weight: 700;
+   font-size: 1.5em;
 }
-.iconosFooter{
-    width: 30px;
-    height: 30px;
-    
-}
+
+
+/* gMaps */
 .gmaps{
    font-family: Arima ;
    font-weight: 700 ;
@@ -228,14 +215,48 @@ h2{
    color: black;
    display: flex;
    flex-direction: column;
-}   
+   grid-area: gGrid
+}
+/* texto intermedio */
+.inter{
+    grid-area: interGrid;
+}
+/* iconos de ig y mail */
+.cajasFooter{
+    display: flex;
+    
+ }
+ .iconosFooter{
+     width: 30px;
+     height: 30px;
+     
+ }
+
 .lista{
     list-style: none;
     flex-direction:column;
     padding: 0.5em;
     margin-right: 1em;
+    grid-area: listaGrid;
 }
 
+
+/* icono de watsapp fixed */
+.wats {
+    width: 3em;
+    height: auto;
+    position:fixed;
+    right:2%;
+    bottom:2%;
+    z-index: 3;
+
+}
+.wats img{
+    width: 100%;
+}
+/* media queries */
+
+/* desaparicion del aside */
 @media only screen and (max-width:450px){
 
     #carouselExampleFade{
@@ -244,6 +265,14 @@ h2{
     .asideMain{
         display:none;
     }
+  
+
+}
+/* desaparicion de texto footer */
+ @media (max-width:600px)  { .inter{
+    display: none;
+    }
+  /* cambio de sentido del submenu */
 }
 @media (min-width:620px){
     nav li ul{
@@ -251,4 +280,15 @@ h2{
     top: 1.5em;
   
 }
+  }
+  /* media queries grid */
+@media only screen and (max-width:614px) {
+    .listadoProductos{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (min-width:615px)and (max-width:960px){
+    .listadoProductos{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
