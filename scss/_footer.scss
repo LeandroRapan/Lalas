@@ -1,0 +1,42 @@
+.footer{
+    background-image: linear-gradient(to bottom,#FCF8E8,#D8B384); 
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr ;
+    grid-template-areas: 
+    "gGrid interGrid listaGrid"
+    "gGrid interGrid listaGrid"
+    ;
+    padding: 2em;
+    margin-top: 5%;
+    font-family: "Arima";
+    font-weight: 700;
+    font-size: 1.5em;
+    .gmaps{
+        font-family: Arima ;
+        font-weight: 700 ;
+        font-size:small;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        grid-area: gGrid;
+    }
+    .inter{
+        grid-area: interGrid;
+        @media (max-width:600px)  { 
+            display: none;
+                }
+    }
+    .cajasFooter{
+        display: flex;
+        list-style: none;
+        flex-direction:column;
+        padding: 0.5em;
+        margin-right: 1em;
+        grid-area: listaGrid;
+        .iconosFooter{
+            width: 30px;
+            height: 30px;
+            
+        }
+     }
+}
