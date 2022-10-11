@@ -1,0 +1,35 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  #FCF8E8 ;
+    display:flex;
+    flex-direction:column;
+    min-height: 80vh;
+
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-family: "Arima";
+    color:#94B49F
+}
+
+/* icono de watsapp fixed */
+.wats {
+    width: 3em;
+    height: auto;
+    position:fixed;
+    right:2%;
+    bottom:2%;
+    z-index: 3;
+
+}
+.wats img{
+    width: 100%;
+}
