@@ -171,6 +171,7 @@ h1{
     text-justify: auto;
 
 }
+/* listado productos */
 /* img con descripcion img2 sin */
 .imgProducto{
    width: 100%;
@@ -274,13 +275,7 @@ h2{
     }
   /* cambio de sentido del submenu */
 }
-@media (min-width:620px){
-    nav li ul{
-    left: 9.1em;
-    top: 1.5em;
-  
-}
-  }
+
   /* media queries grid */
 @media only screen and (max-width:614px) {
     .listadoProductos{
